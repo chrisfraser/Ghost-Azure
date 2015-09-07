@@ -1,0 +1,69 @@
+{{!< default}}
+
+<main class="content" role="main">
+	{{#post}}
+
+		<article class="{{post_class}} full container post-container">
+
+			<h1 class="post-title">{{{title}}}</h1>
+
+      <span class="post-meta">
+        <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
+        {{#if tags}}
+			<span class="post-tags">
+				<i class="fa fa-tags"></i>
+				{{#foreach tags}}
+				    <a class="label label-default" href="{{url}}">{{name}}</a>
+				{{/foreach}}
+			</span>
+		{{/if}}
+      </span>
+
+			<section class="post-content">
+				{{content}}
+			</section>
+
+		</article>
+
+		<footer class="post-footer">
+			<div class="container">
+
+				<div class="post-footer-item">
+					<img class="img-circle author-img" src="{{author.image}}" alt="Author"/>
+				</div>
+
+				<div class="post-footer-item">
+					<section class="author-description">
+						<h4>{{author.name}}</h4>
+
+						<p>{{author.bio}}</p>
+					</section>
+
+					<section class="share">
+						<h4>Share this post</h4>
+						<a class="fa fa-twitter" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"
+						   onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+							<span class="hidden">Twitter</span>
+						</a>
+						<a class="fa fa-facebook-square" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+						   onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+							<span class="hidden">Facebook</span>
+						</a>
+						<a class="fa fa-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+						   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+							<span class="hidden">Google+</span>
+						</a>
+					</section>
+				</div>
+
+			</div>
+		</footer>
+
+		<!-- Disqus -->
+		<div class="container post-container" id="disqus_thread"></div>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+			Disqus.</a>
+		</noscript>
+
+	{{/post}}
+</main>

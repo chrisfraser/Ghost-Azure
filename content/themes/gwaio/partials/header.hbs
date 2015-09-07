@@ -1,0 +1,50 @@
+<header>
+	<nav class="blog-navbar navbar navbar-inverse" role="navigation">
+		<div class="container header-container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="{{@blog.url}}">{{@blog.title}}</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<p class="navbar-text">{{@blog.description}}</p>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="https://twitter.com/TheGwa" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://plus.google.com/u/0/+ChrisFraserGwa" target="_blank">
+							<i class="fa fa-google-plus"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/chrisfraser" target="_blank">
+							<i class="fa fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="{{@blog.url}}/about">
+							<i class="fa fa-user"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="blog-navbar-under-layer"></div>
+
+	<div class="blog-title container">
+		<div class="blog-logo">
+			<img src="{{@blog.logo}}">
+		</div>
+	</div>
+</header>

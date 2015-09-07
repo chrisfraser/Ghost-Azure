@@ -5,6 +5,8 @@ var express,
     parentApp,
     errors;
 
+require('dotenv').load({silent: true});
+
 // Make sure dependencies are installed and file system permissions are correct.
 require('./core/server/utils/startup-check').check();
 

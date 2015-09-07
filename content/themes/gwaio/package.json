@@ -1,0 +1,31 @@
+{
+  "name": "Gwaio",
+  "version": "1.0.0",
+  "description": "A Bootstrap UI based theme for Ghost",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chrisfraser/aio.git"
+  },
+  "author": "bosc.arno@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisfraser/aio/issues"
+  },
+  "homepage": "https://github.com/chrisfraser/aio",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-less": "^0.11.0",
+    "grunt-rsync": "^0.5.0",
+    "lodash": "^2.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-pattern-replace": "^0.2.0",
+    "grunt-contrib-compress": "^0.8.0",
+    "time-grunt": "^0.3.2",
+    "r": "0.0.5",
+    "jit-grunt": "^0.7.0"
+  }
+}
